@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/explain.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Explaination</title>
+    <link rel="icon" href="../images/ace.png" type="image/png" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="card">
+        <header>
+          <aside id="register">
+            <h1>Example</h1>
+            <ul>
+              <li>
+                <input type="email" id="register-email" placeholder="email" />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  id="register-password"
+                  placeholder="password"
+                />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  id="register-rePassword"
+                  placeholder="re-password"
+                />
+              </li>
+              <li>
+                <button onclick="handleAuthentication('register')">
+                  Register
+                </button>
+              </li>
+            </ul>
+          </aside>
+          <aside id="login">
+            <h1>Example</h1>
+            <ul>
+              <li>
+                <input type="email" id="login-email" placeholder="email" />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  id="login-password"
+                  placeholder="password"
+                />
+              </li>
+              <li>
+                <button onclick="handleAuthentication('login')">Login</button>
+              </li>
+            </ul>
+          </aside>
+        </header>
+        <footer>
+          <a id="insert" data-method="POST" onclick="toggleMenu(this)">
+            <i class="fa-solid fa-folder-plus"></i>
+            <p>Create</p>
+          </a>
+          <a id="fetch" data-method="POST" onclick="toggleMenu(this)">
+            <i class="fa-solid fa-folder-tree"></i>
+            <p>Read</p>
+          </a>
+          <a id="update" data-method="PATCH" onclick="toggleMenu(this)">
+            <i class="fa-solid fa-folder-open"></i>
+            <p>Update</p>
+          </a>
+          <a id="delete" data-method="DELETE" onclick="toggleMenu(this)">
+            <i class="fa-solid fa-folder-minus"></i>
+            <p>Delete</p>
+          </a>
+        </footer>
+        <section>
+          <div id="insert-section">Create Section Content</div>
+          <div id="fetch-section">Read Section Content</div>
+          <div id="update-section">Update Section Content</div>
+          <div id="delete-section">Delete Section Content</div>
+        </section>
+      </div>
+    </div>
+    <script src="js/cl_explain.js"></script>
+  </body>
+</html>
